@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.classless.min.css" />
+</head>
+<body>
+<h1>Eateries</h1>
+<ul>
+    <% eateries.forEach(function(e) { %>
+    <li>
+        <a href="/eateries/<%= e.id %>"><%= e.name %></a>
+    </li>
+    <% }); %>
+</ul>
+</body>
+</html>
